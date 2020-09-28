@@ -285,10 +285,14 @@ Write me</div>
         console.log(val1);
         console.log(val2);
         console.log(val3);
-        if(val1&&val2&&val3){
-            alert("Thank you! Message Successfully Submitted");
-            return true;
-        }
+       if (val1 && val2 && val3) {
+                if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(val2)) {
+                    alert("Thank you! Message successfully submitted");
+                    return true;
+
+                }
+
+            }
 
       
           
